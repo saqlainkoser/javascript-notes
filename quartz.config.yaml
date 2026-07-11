@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Quartz 5
+  pageTitle: DevNotes by Saqlain
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
@@ -38,8 +38,8 @@ configuration:
         dark: "#ebebec"
         secondary: "#7b97aa"
         tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#b3aa0288"
+        highlight: "rgba(242, 215, 65, 0.15)"
+        textHighlight: "#84a59d55"
 plugins:
   - source: github:quartz-community/created-modified-date
     enabled: true

@@ -8,26 +8,26 @@ Welcome to my complete set of JavaScript notes, compiled while learning under **
 
 ## 📚 What's Inside
 
-- [[JavaScript]]
+- [[1. JavaScript]]
 ### Fundamentals
 
-- [[JavaScript Variables]]
-- [[JavaScript Datatypes]] 
-	- [[String]]
-	- [[Number]]
+- [[2. JavaScript Variables]]
+- [[3. JavaScript Datatypes]] 
+	- [[3.1 String]]
+	- [[3.2 Number]]
 	
 
 
 ### Arrays
 
-- [[JS ARRAYS]]
-- [[Questions On Arrays]]
+- [[4. JS ARRAYS]]
+- [[5. Questions On Arrays]]
 
 ### Objects
 
-- [[JS Objects]]
-- [[Tasks on Objects]]
-- [[Array & Object , value , Reference vs Copy]]
+- [[6. JS Objects]]
+- [[7. Tasks on Objects]]
+- [[8. Array & Object , value , Reference vs Copy]]
 
 ### Functions
 
