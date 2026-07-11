@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: github.com/saqlainkoser/javascript-notes
+  baseUrl: "saqlainkoser.github.io/javascript-notes"
   ignorePatterns:
     - private
     - templates
