@@ -1,13 +1,5 @@
 ---
-title: Welcome to Quartz
----
----
-
-title: JavaScript By S.K. Ansari Sir draft: false tags:
-
-- javascript
-- notes
-
+title: Welcome to Java Script Notes
 ---
 
 # JavaScript By S.K. Ansari Sir
@@ -16,9 +8,7 @@ Welcome to my complete set of JavaScript notes, compiled while learning under **
 
 ## 📚 What's Inside
 
-- [[JavaScript Inro.excalidraw]]
-- 
-
+- Java Script[[Intro]]
 ### Fundamentals
 
 - [[JavaScript Variables]]
