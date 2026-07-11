@@ -1,0 +1,418 @@
+
+
+# 🎯 Tasks on Objects — 15 Practice Scenarios (Easy → Hard)
+
+A progressive set of object-based coding tasks — start from Task 1 and work your way up. Each task builds on skills from the previous ones.
+
+---
+
+## 🟢 EASY (Tasks 1–5)
+
+### Task 1 – Student Information System
+
+**Objective:** Learn how to create, read, update, and delete object properties.
+
+Create an object named `student` with the following properties:
+
+- `name`
+- `age`
+- `course`
+- `city`
+
+**Perform these operations:**
+
+1. Print the student's name
+2. Update the age
+3. Add a new property `email`
+4. Delete the `city` property
+5. Print the final object
+6. Check whether the object has a `course` property
+
+---
+
+### Task 2 – Personal Contact Card
+
+**Objective:** Practice basic property access and dot vs bracket notation.
+
+```js
+let contact = {
+  name: "Riya",
+  phone: "9876543210",
+  city: "Indore"
+};
+```
+
+**Perform these tasks:**
+
+1. Print the phone number using dot notation
+2. Print the city using bracket notation
+3. Add a new property `email`
+4. Access a property using a dynamic key stored in a variable
+5. Log whether `contact` has a `state` property
+
+---
+
+### Task 3 – Product Management
+
+**Objective:** Practice object methods and looping through objects.
+
+```js
+let product = {
+  id: 101,
+  name: "Laptop",
+  price: 65000,
+  quantity: 5
+};
+```
+
+**Perform these tasks:**
+
+1. Print every key and value using a `for...in` loop
+2. Print all keys using `Object.keys()`
+3. Print all values using `Object.values()`
+4. Print all key-value pairs using `Object.entries()`
+5. Add a method named `totalPrice()` that returns `price × quantity`
+6. Call the method and print the result
+
+---
+
+### Task 4 – Book Record
+
+**Objective:** Practice `hasOwnProperty`, `in`, and `Object.freeze()`.
+
+```js
+let book = {
+  title: "Atomic Habits",
+  author: "James Clear",
+  pages: 320
+};
+```
+
+**Perform these tasks:**
+
+1. Check if `book` has a property called `author` using `in`
+2. Check the same using `hasOwnProperty()`
+3. Freeze the `book` object
+4. Try changing `pages` after freezing and print the object to confirm it didn't change
+5. Add a `genre` property before freezing and confirm it appears
+
+---
+
+### Task 5 – Simple Bank Account
+
+**Objective:** Practice methods that use `this` to update object state.
+
+```js
+let account = {
+  owner: "Saqlain",
+  balance: 5000,
+  deposit(amount) {
+    this.balance += amount;
+  },
+  withdraw(amount) {
+    this.balance -= amount;
+  }
+};
+```
+
+**Perform these tasks:**
+
+1. Deposit ₹2000 and print the new balance
+2. Withdraw ₹1500 and print the new balance
+3. Add a method `showBalance()` that logs `"Balance: ₹<amount>"`
+4. Prevent withdrawal if the amount is greater than the current balance (print an error message instead)
+
+---
+
+## 🟡 MEDIUM (Tasks 6–10)
+
+### Task 6 – Employee Payroll System
+
+**Objective:** Work with nested objects and computed values.
+
+```js
+let employee = {
+  name: "Farhan",
+  basicSalary: 30000,
+  allowances: {
+    hra: 5000,
+    travel: 2000
+  },
+  deductions: {
+    tax: 3000,
+    pf: 1500
+  }
+};
+```
+
+**Perform these tasks:**
+
+1. Calculate gross salary = `basicSalary + hra + travel`
+2. Calculate net salary = `gross salary - (tax + pf)`
+3. Add a method `netSalary()` on the object that returns the result
+4. Print all allowance keys and values using `for...in`
+5. Use destructuring to extract `hra` and `travel` directly from `allowances`
+
+---
+
+### Task 7 – Movie Catalog
+
+**Objective:** Practice arrays inside objects and destructuring.
+
+```js
+let movie = {
+  title: "Inception",
+  year: 2010,
+  genres: ["Sci-Fi", "Thriller", "Action"],
+  rating: 8.8
+};
+```
+
+**Perform these tasks:**
+
+1. Print the first genre using destructuring
+2. Add a new genre to the `genres` array without overwriting existing ones
+3. Check if `"Action"` exists in the genres list
+4. Create a short summary string: `"Inception (2010) - Rated 8.8"` using template literals and object values
+5. Use the spread operator to create a copy of `movie` with an updated `rating`
+
+---
+
+### Task 8 – Shopping Cart
+
+**Objective:** Practice adding/removing nested items and calculating totals.
+
+```js
+let cart = {
+  customer: "Ayesha",
+  items: {
+    item1: { name: "Shoes", price: 2000, qty: 1 },
+    item2: { name: "T-Shirt", price: 800, qty: 2 }
+  }
+};
+```
+
+**Perform these tasks:**
+
+1. Calculate the total cart value (`price × qty` summed across all items)
+2. Add a new item `item3`
+3. Remove `item2` from the cart
+4. Print all item names using `Object.values()`
+5. Find the most expensive single item
+
+---
+
+### Task 9 – Weather Dashboard
+
+**Objective:** Practice looping through nested city data.
+
+```js
+let weather = {
+  Delhi: { temp: 38, condition: "Sunny" },
+  Mumbai: { temp: 31, condition: "Humid" },
+  Shimla: { temp: 18, condition: "Cloudy" }
+};
+```
+
+**Perform these tasks:**
+
+1. Print each city with its temperature using `for...in`
+2. Find the hottest city
+3. Find the coldest city
+4. Convert all temperatures from °C to °F and print the updated object (formula: `°F = °C × 9/5 + 32`)
+5. Use `Object.entries()` to build an array like `["Delhi - 38°C", "Mumbai - 31°C", ...]`
+
+---
+
+### Task 10 – User Profile with Social Links
+
+**Objective:** Practice optional chaining and computed property names.
+
+```js
+let user = {
+  username: "saqlain_dev",
+  profile: {
+    bio: "JS Developer",
+    social: {
+      twitter: "@saqlain"
+    }
+  }
+};
+```
+
+**Perform these tasks:**
+
+1. Safely print `user.profile.social.instagram` using optional chaining (should not throw an error even though it doesn't exist)
+2. Add a new social platform using a computed property name, e.g. `let platform = "github"`
+3. Check if the `social` object has a `linkedin` key
+4. Print a fallback value `"Not available"` when a social link doesn't exist, using `??`
+
+---
+
+## 🔴 HARD (Tasks 11–15)
+
+### Task 11 – Student Management System
+
+**Objective:** Work with deeply nested objects.
+
+```js
+let school = {
+  name: "ABC School",
+  students: {
+    s1: {
+      name: "Ali", age: 20,
+      marks: { math: 80, science: 90, english: 75 }
+    },
+    s2: {
+      name: "Sara", age: 22,
+      marks: { math: 95, science: 88, english: 91 }
+    },
+    s3: {
+      name: "John", age: 21,
+      marks: { math: 60, science: 70, english: 65 }
+    }
+  }
+};
+```
+
+**Perform these tasks:**
+
+1. Print every student's name using `Object.values()`
+2. Calculate each student's average marks
+3. Find the topper (student with the highest average)
+4. Calculate the class average across all students and all subjects
+5. Add a new subject `computer` with a mark for each student
+6. Find how many students scored above 80 in math
+
+---
+
+### Task 12 – E-Commerce Inventory System
+
+**Objective:** Work with nested objects, methods, spread operator, destructuring, and object traversal.
+
+```js
+let store = {
+  name: "Tech Store",
+  products: {
+    p1: { name: "Laptop", price: 60000, stock: 8 },
+    p2: { name: "Mouse", price: 1200, stock: 30 },
+    p3: { name: "Keyboard", price: 2500, stock: 20 },
+    p4: { name: "Monitor", price: 18000, stock: 10 }
+  }
+};
+```
+
+**Perform these tasks:**
+
+1. Print every product name
+2. Print all products costing more than ₹10,000
+3. Calculate the total inventory value (`price × stock`, summed)
+4. Find the most expensive product
+5. Find the product with the highest stock
+6. Add a new product `p5`
+7. Delete product `p2`
+8. Increase every product's price by 10%
+9. Create a deep copy of `store` using `structuredClone()` and prove that changes in the original do not affect the copy
+10. Print all product IDs using `Object.keys()`
+11. Destructure the first product's `name` and `price`
+12. Merge the following object into `store` using the spread operator:
+
+```js
+{
+  owner: "Saqlain",
+  location: "Bhopal"
+}
+```
+
+---
+
+### Task 13 – Company Department System
+
+**Objective:** Combine objects, arrays, prototypes, and multi-level traversal.
+
+```js
+let company = {
+  name: "CodeCorp",
+  departments: {
+    engineering: {
+      head: "Ali",
+      employees: [
+        { name: "Sara", salary: 40000 },
+        { name: "John", salary: 45000 }
+      ]
+    },
+    sales: {
+      head: "Meera",
+      employees: [
+        { name: "Karan", salary: 30000 },
+        { name: "Nisha", salary: 32000 }
+      ]
+    }
+  }
+};
+```
+
+**Perform these tasks:**
+
+1. Print the head of each department
+2. Calculate the total salary expense per department
+3. Calculate total salary expense for the entire company
+4. Find the highest-paid employee across all departments
+5. Add a new employee to the `sales` department
+6. Create a constructor function `Department(head)` and attach a method `introduce()` to its prototype that logs `"Head is <name>"`
+7. Convert `company.departments` into an array of `[deptName, deptData]` pairs using `Object.entries()`
+
+---
+
+### Task 14 – Multi-Account Banking System
+
+**Objective:** Practice object comparison, freezing, transactions, and error handling.
+
+```js
+let bank = {
+  accounts: {
+    acc1: { owner: "Ravi", balance: 10000 },
+    acc2: { owner: "Meena", balance: 5000 }
+  }
+};
+```
+
+**Perform these tasks:**
+
+1. Write a `transfer(fromId, toId, amount)` function that moves money between two accounts inside `bank.accounts`
+2. Prevent the transfer if the sender doesn't have enough balance (print an error instead)
+3. Freeze `acc2` using `Object.freeze()` and try to transfer money into it — observe and explain what happens
+4. Compare two account objects with identical data using `===`, then correctly using `JSON.stringify()`
+5. Log a full transaction history array each time `transfer()` runs, storing `{ from, to, amount, date }` objects
+
+---
+
+### Task 15 – Social Media Post System
+
+**Objective:** Combine nested objects, arrays, spread/merge, and deep cloning in one realistic scenario.
+
+```js
+let post = {
+  id: 1,
+  author: "Saqlain",
+  content: "Learning JavaScript Objects!",
+  likes: 120,
+  comments: [
+    { user: "Ali", text: "Nice post!" },
+    { user: "Sara", text: "Very helpful 🔥" }
+  ]
+};
+```
+
+**Perform these tasks:**
+
+1. Add a new comment to the `comments` array
+2. Increase `likes` by 1 using a method `likePost()`
+3. Find whether a specific user (e.g. `"Ali"`) has already commented
+4. Create a deep copy of `post` using `structuredClone()` and prove edits to the copy don't affect the original
+5. Merge an `edited: true, editedAt: <date>` object into `post` using the spread operator
+6. Build a summary object using destructuring that only contains `author`, `content`, and the **number** of comments (not the full array)
+
+---
+
+_Part of [[JavaScript By S.K. Ansari Sir]] notes. See also [[JS Objects]] for concept reference._

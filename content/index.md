@@ -8,11 +8,15 @@ Welcome to my complete set of JavaScript notes, compiled while learning under **
 
 ## 📚 What's Inside
 
-- Java Script[[Intro]]
+- [[JavaScript]]
 ### Fundamentals
 
 - [[JavaScript Variables]]
-- [[JavaScript Datatypes]]
+- [[JavaScript Datatypes]] 
+	- [[String]]
+	- [[Number]]
+	
+
 
 ### Arrays
 

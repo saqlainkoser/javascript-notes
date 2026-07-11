@@ -1,0 +1,129 @@
+![[Pasted image 20260711203047.png]]
+
+---
+
+## 🔨 Mutator Methods (Change the Original Array)
+
+|Method|Description|
+|---|---|
+|`push()`|Adds one or more elements to the **end** of an array|
+|`pop()`|Removes the **last** element and returns it|
+|`unshift()`|Adds one or more elements to the **beginning** of an array|
+|`shift()`|Removes the **first** element and returns it|
+|`splice()`|Adds/removes elements at any position|
+|`sort()`|Sorts elements in place|
+|`reverse()`|Reverses the order of elements in place|
+|`fill()`|Fills all/part of an array with a static value|
+|`copyWithin()`|Copies part of the array to another location within itself|
+
+```js
+let arr = [1, 2, 3];
+arr.push(4);        // [1, 2, 3, 4]
+arr.pop();           // [1, 2, 3]
+arr.unshift(0);       // [0, 1, 2, 3]
+arr.shift();          // [1, 2, 3]
+arr.splice(1, 1, 9);  // [1, 9, 3]
+arr.sort();            // sorted in place
+arr.reverse();         // reversed in place
+```
+
+---
+
+## 🔍 Accessor Methods (Return New Array/Value, Don't Modify Original)
+
+|Method|Description|
+|---|---|
+|`concat()`|Merges two or more arrays into a new array|
+|`slice()`|Returns a shallow copy of a portion of an array|
+|`join()`|Joins all elements into a string|
+|`indexOf()`|Returns first index of an element, or -1|
+|`lastIndexOf()`|Returns last index of an element, or -1|
+|`includes()`|Checks if array contains a value (returns boolean)|
+|`at()`|Returns element at given index (supports negative indices)|
+|`flat()`|Flattens nested arrays into a single array|
+|`flatMap()`|Maps then flattens the result by one level|
+|`toString()`|Converts array to a comma-separated string|
+|`toReversed()`|Returns a reversed copy (ES2023, doesn't mutate)|
+|`toSorted()`|Returns a sorted copy (ES2023, doesn't mutate)|
+|`toSpliced()`|Returns a spliced copy (ES2023, doesn't mutate)|
+|`with()`|Returns a copy with one element replaced (ES2023)|
+
+```js
+let arr = [1, [2, 3], [4, [5, 6]]];
+arr.flat();            // [1, 2, 3, 4, [5, 6]]
+arr.flat(2);            // [1, 2, 3, 4, 5, 6]
+
+let a = [1, 2, 3];
+a.includes(2);           // true
+a.at(-1);                  // 3
+```
+
+---
+
+## 🔁 Iteration Methods (Loop Through Arrays)
+
+|Method|Description|
+|---|---|
+|`forEach()`|Executes a function on each element, returns `undefined`|
+|`map()`|Creates a new array with results of calling function on each element|
+|`filter()`|Creates a new array with elements that pass a test|
+|`reduce()`|Reduces array to a single value (left to right)|
+|`reduceRight()`|Reduces array to a single value (right to left)|
+|`find()`|Returns first element that satisfies a condition|
+|`findIndex()`|Returns index of first element that satisfies a condition|
+|`findLast()`|Returns last element that satisfies a condition|
+|`findLastIndex()`|Returns index of last element that satisfies a condition|
+|`some()`|Checks if at least one element passes a test (returns boolean)|
+|`every()`|Checks if all elements pass a test (returns boolean)|
+|`entries()`|Returns an iterator of [index, value] pairs|
+|`keys()`|Returns an iterator of array indices|
+|`values()`|Returns an iterator of array values|
+
+```js
+let nums = [1, 2, 3, 4, 5];
+
+nums.map(n => n * 2);              // [2, 4, 6, 8, 10]
+nums.filter(n => n % 2 === 0);      // [2, 4]
+nums.reduce((acc, n) => acc + n, 0); // 15
+nums.find(n => n > 3);               // 4
+nums.some(n => n > 4);                // true
+nums.every(n => n > 0);                // true
+```
+
+---
+
+## 🏗️ Static Array Methods
+
+|Method|Description|
+|---|---|
+|`Array.isArray()`|Checks if a value is an array|
+|`Array.from()`|Creates an array from an iterable or array-like object|
+|`Array.of()`|Creates an array from a variable number of arguments|
+
+```js
+Array.isArray([1, 2, 3]);          // true
+Array.from("hello");                 // ['h','e','l','l','o']
+Array.from({length: 5}, (_, i) => i); // [0,1,2,3,4]
+Array.of(7);                          // [7]
+```
+
+---
+
+## ⚡ Quick Reference: Mutates vs Doesn't Mutate
+
+**Mutates original array:** `push`, `pop`, `shift`, `unshift`, `splice`, `sort`, `reverse`, `fill`, `copyWithin`
+
+**Does NOT mutate (returns new array/value):** `concat`, `slice`, `map`, `filter`, `reduce`, `find`, `includes`, `join`, `flat`, `flatMap`, `toSorted`, `toReversed`, `toSpliced`, `with`
+
+---
+
+## 📝 Common Interview Gotchas
+
+- `sort()` converts elements to strings by default — `[10, 2, 1].sort()` gives `[1, 10, 2]`, not `[1, 2, 10]`. Always pass a comparator: `.sort((a, b) => a - b)`
+- `forEach()` cannot be stopped with `break` — use `some()` or a `for` loop if you need early exit
+- `map()` always returns an array of the **same length** as the original
+- `splice()` mutates and returns removed elements; `slice()` doesn't mutate and returns a copy
+
+---
+
+_Part of [[JavaScript By S.K. Ansari Sir]] notes._
