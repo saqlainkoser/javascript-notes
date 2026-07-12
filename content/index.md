@@ -31,8 +31,9 @@ Welcome to my complete set of JavaScript notes, compiled while learning under **
 
 ### Functions
 
-- [[Special functions]]
-- [[JS FUNCTIONS]]
+
+- [[9. JS FUNCTIONS]]
+-  [[Special functions]]
 - [[Arrow Functions]]
 - [[Task on FN ARR AND OBJ]]
 - [[Function Hoisting in JS]]
