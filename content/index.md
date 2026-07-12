@@ -40,7 +40,7 @@ Welcome to my complete set of JavaScript notes, compiled while learning under **
 
 ### Browser & DOM
 
-- [[Keyboard and Mouse Events]]
+- [[10. DOM Manipulation]]
 - [[Propogation Of Events]]
 - [[Document Object Model]]
 
