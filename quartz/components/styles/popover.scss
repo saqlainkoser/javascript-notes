@@ -52,11 +52,18 @@
     }
 
     &[data-content-type*="image"] {
-      img {
-        margin: 0;
-        border-radius: 0;
-        display: block;
-      }
+      width: auto;
+      max-width: min(90vw, 40rem);
+  
+    img {
+      margin: 0;
+      border-radius: 0;
+      display: block;
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+      object-position: top left;
+       }
     }
 
     &[data-content-type*="pdf"] {

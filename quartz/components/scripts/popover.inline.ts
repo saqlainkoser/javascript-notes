@@ -78,6 +78,10 @@ async function mouseEnterHandler(
       const img = document.createElement("img")
       img.src = targetUrl.toString()
       img.alt = targetUrl.pathname
+      img.addEventListener("load", () => {
+    popoverInner.scrollTop = 0
+    popoverInner.scrollLeft = 0
+    })
 
       popoverInner.appendChild(img)
       break
