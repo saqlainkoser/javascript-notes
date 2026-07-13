@@ -17,3 +17,9 @@ mark {
     background: #25b0eb !important;
     color: white !important;
 }
+
+.popover img, .lightbox img, svg {
+     max-width: 100%;
+     height: auto;
+     object-fit: contain;
+   }
