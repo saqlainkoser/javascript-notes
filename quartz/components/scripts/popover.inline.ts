@@ -24,23 +24,27 @@ async function mouseEnterHandler(
     })
   }
 
-  function showPopover(popoverElement: HTMLElement) {
-    clearActivePopover()
-    popoverElement.classList.add("active-popover")
-    setPosition(popoverElement as HTMLElement)
+function showPopover(popoverElement: HTMLElement) {
+  clearActivePopover()
+  popoverElement.classList.add("active-popover")
+  setPosition(popoverElement as HTMLElement)
 
-    if (hash !== "") {
-      const inner = popoverElement.querySelector(".popover-inner") as HTMLElement | null
-      if (inner) {
-        const targetAnchor = `#popover-internal-${hash.slice(1)}`
-        const heading = inner.querySelector(targetAnchor) as HTMLElement | null
-        if (heading) {
-          // leave ~12px of buffer when scrolling to a heading
-          inner.scroll({ top: heading.offsetTop - 12, behavior: "instant" })
-        }
+  const inner = popoverElement.querySelector(".popover-inner") as HTMLElement | null
+
+  if (hash !== "") {
+    if (inner) {
+      const targetAnchor = `#popover-internal-${hash.slice(1)}`
+      const heading = inner.querySelector(targetAnchor) as HTMLElement | null
+      if (heading) {
+        // leave ~12px of buffer when scrolling to a heading
+        inner.scroll({ top: heading.offsetTop - 12, behavior: "instant" })
       }
     }
+  } else if (inner) {
+    // no specific target — always land at the top
+    inner.scroll({ top: 0, left: 0, behavior: "instant" })
   }
+}
 
   const targetUrl = new URL(link.href)
   const hash = decodeURIComponent(targetUrl.hash)
@@ -75,16 +79,17 @@ async function mouseEnterHandler(
 
   switch (contentTypeCategory) {
     case "image":
-      const img = document.createElement("img")
-      img.src = targetUrl.toString()
-      img.alt = targetUrl.pathname
-      img.addEventListener("load", () => {
-    popoverInner.scrollTop = 0
-    popoverInner.scrollLeft = 0
-    })
-
-      popoverInner.appendChild(img)
-      break
+  const img = document.createElement("img")
+  img.alt = targetUrl.pathname
+  img.addEventListener("load", () => {
+    if (popoverInner.isConnected) {
+      popoverInner.scrollTop = 200
+      popoverInner.scrollLeft = 0
+    }
+  })
+  img.src = targetUrl.toString() // set src AFTER attaching the load listener
+  popoverInner.appendChild(img)
+  break
     case "application":
       switch (typeInfo) {
         case "pdf":
