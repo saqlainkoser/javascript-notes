@@ -41,7 +41,7 @@ Welcome to my complete set of JavaScript notes, compiled while learning under **
 ### Browser & DOM
 
 - [[10. DOM Manipulation]]
-- [[Propogation Of Events]]
+- [[10.1 Events]] -Propogation Of Events 
 - [[Task 1 The Dark - Light Theme Toggle]]
 - [[Task 2 Amazon-Style "Quick View" Trigger]]
 
