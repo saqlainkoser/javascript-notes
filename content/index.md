@@ -42,7 +42,8 @@ Welcome to my complete set of JavaScript notes, compiled while learning under **
 
 - [[10. DOM Manipulation]]
 - [[Propogation Of Events]]
-- [[Document Object Model]]
+- [[Task 1 The Dark - Light Theme Toggle]]
+- [[Task 2 Amazon-Style "Quick View" Trigger]]
 
 ### Asynchronous JavaScript
 
