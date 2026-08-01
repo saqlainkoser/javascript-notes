@@ -1,19 +1,16 @@
 Implement a button listener that switches the background color and updates text in a status panel dynamically when clicked.
-<!-- Target HTML Elements -->
 ```HTML
 <button id="theme-btn">Toggle Theme</button>
 <div id="status-box">Current: Dark Mode</div>
 ```
-<button id="theme-btn">Toggle Theme</button>
-
-// YOUR CHALLENGE: Write the JavaScript in app.js
+// YOUR CHALLENGE: Write the JavaScript in script.js
 // Requirements:
-// 1. Grab reference to #theme-btn and #status-box
-// 2. Add dynamic click listener using addEventListener()
+// 1. Grab reference to #theme-btn and #status-box .
+// 2. Add dynamic click listener using addEventListener().
 // 3. Inside the handler:
-//    - Toggle a custom class '.light-theme' on document.body
-//    - If body contains '.light-theme', update text to "Light Mode"
-//    - Otherwise, reset text to "Dark Mode"
+//    - Toggle a custom class '.light-theme' on document.body.
+//    - If body contains '.light-theme', update text to "Light Mode". and toggle  class to .dark-theme
+//    - Otherwise, reset text to "Dark Mode".
 
 ![[Pasted image 20260719210207.png]]
 

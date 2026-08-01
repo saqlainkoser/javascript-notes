@@ -15,7 +15,7 @@ mouseout
 // 3. inside entry handler: display the quick view container (display = 'block')
 // 4. Add event listener to detect when user exits the product card
 // 5. inside exit handler: hide the quick view container (display = 'none')
-// NOTE: Try to use mouseover / mouseout AND check for flicker issues!
+// NOTE: Try to use mouseover / mouseout !
 
 ```
 
