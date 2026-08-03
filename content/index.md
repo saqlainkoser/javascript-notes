@@ -41,15 +41,19 @@ Welcome to my complete set of JavaScript notes, compiled while learning under **
 ### Browser & DOM
 
 - [[10. DOM Manipulation]]
-- [[10.1 Events]] -Propogation Of Events 
+- [[10.1 Events]] - Propagation Of Events 
 - [[Task 1 The Dark - Light Theme Toggle]]
 - [[Task 2 Amazon-Style "Quick View" Trigger]]
 
 ### Asynchronous JavaScript
 
-- [[Asynchronous Programming in JS]]
-- [[AJAX]]
-- [[PROMISE , FETCH , ASYNC , AWAIT]]
+- [[11. Asynchronous Programming in JS]]
+- [[11.3 Explained Code]]
+- [[11.1 CallBask]]
+- [[11.2 PROMISE , FETCH]]
+- [[11.3 Explained Code]]
+- [[11.4 ASYNC AWAIT]]
+- [[11.5 Event LOOP ⭐️]]
 - [[XML , Fetch , Axios]]
 - [[Weather Api Task]]
 
