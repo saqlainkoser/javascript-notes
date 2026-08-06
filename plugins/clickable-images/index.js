@@ -89,27 +89,35 @@ const CSS = `
 
 const JS = `
 (function () {
-  var modal = null
+  // Never cache the modal in a closure: Quartz's SPA replaces <body> on every
+  // navigation (micromorph), which removes the modal from the DOM while the
+  // script (data-persist, runs once) keeps running. Always look it up fresh so
+  // a new, connected modal is created after navigation.
+  function getModal() {
+    var modal = document.querySelector(".lightbox-modal")
+    if (modal) return modal
+
+    modal = document.createElement("div")
+    modal.className = "lightbox-modal"
+    modal.setAttribute("role", "dialog")
+    modal.setAttribute("aria-modal", "true")
+    modal.innerHTML =
+      '<button class="lightbox-close" aria-label="Close">&times;</button>' +
+      '<img alt="" />' +
+      '<div class="lightbox-caption"></div>'
+    modal.addEventListener("click", function (e) {
+      if (e.target === modal) closeLightbox()
+    })
+    modal.querySelector(".lightbox-close").addEventListener("click", function (e) {
+      e.stopPropagation()
+      closeLightbox()
+    })
+    document.body.appendChild(modal)
+    return modal
+  }
 
   function openLightbox(src, alt) {
-    if (!modal) {
-      modal = document.createElement("div")
-      modal.className = "lightbox-modal"
-      modal.setAttribute("role", "dialog")
-      modal.setAttribute("aria-modal", "true")
-      modal.innerHTML =
-        '<button class="lightbox-close" aria-label="Close">&times;</button>' +
-        '<img alt="" />' +
-        '<div class="lightbox-caption"></div>'
-      document.body.appendChild(modal)
-      modal.addEventListener("click", function (e) {
-        if (e.target === modal) closeLightbox()
-      })
-      modal.querySelector(".lightbox-close").addEventListener("click", function (e) {
-        e.stopPropagation()
-        closeLightbox()
-      })
-    }
+    var modal = getModal()
     var img = modal.querySelector("img")
     img.src = src
     img.alt = alt || ""
@@ -120,8 +128,8 @@ const JS = `
   }
 
   function closeLightbox() {
-    if (!modal || !modal.classList.contains("active")) return
-    modal.classList.remove("active")
+    var modal = document.querySelector(".lightbox-modal")
+    if (modal) modal.classList.remove("active")
     document.body.style.overflow = ""
   }
 
@@ -149,9 +157,15 @@ const JS = `
     }
   })
 
+  // Clean up when Quartz navigates away: close the modal and unstick scroll.
+  document.addEventListener("nav", function () {
+    closeLightbox()
+  })
+
   if (window.addCleanup) {
     window.addCleanup(function () {
-      if (modal && modal.parentNode) modal.parentNode.removeChild(modal)
+      var modal = document.querySelector(".lightbox-modal")
+      if (modal) modal.remove()
       document.body.style.overflow = ""
     })
   }
