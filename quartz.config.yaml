@@ -272,6 +272,9 @@ plugins:
       darkMode: auto
       exportPadding: 20
     order: 50
+  - source: ./plugins/clickable-images
+    enabled: true
+    order: 65
 layout:
   groups:
     toolbar:

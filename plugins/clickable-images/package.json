@@ -1,0 +1,18 @@
+{
+  "name": "clickable-images",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "quartz": {
+    "name": "clickable-images",
+    "displayName": "Clickable Images",
+    "description": "Makes every attached image clickable, opening a zoomed lightbox popup.",
+    "category": ["transformer"],
+    "version": "1.0.0",
+    "defaultOrder": 65
+  }
+}
