@@ -7,6 +7,7 @@ title: Welcome to Java Script Notes
 Welcome to my complete set of JavaScript notes, compiled while learning under **S.K. Ansari Sir**. This collection covers everything from the fundamentals to asynchronous programming, with practical tasks and real-world API examples along the way.
 
 ## 📚 What's Inside
+- [[0.1 CHO_BACKEND]]	
 
 - [[1. JavaScript]]
 ### Fundamentals
