@@ -1,0 +1,333 @@
+{
+  "main": {
+    "id": "1340b1f4f2b2cadf",
+    "type": "split",
+    "children": [
+      {
+        "id": "cb3fe09dd6854f89",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "feafae7f9d1592d6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          },
+          {
+            "id": "5a02e1cd491bda9b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          },
+          {
+            "id": "e691e2b9923eff64",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1. JavaScript.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "1. JavaScript"
+            }
+          },
+          {
+            "id": "3124fd57e449f50f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "9. JS FUNCTIONS.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "9. JS FUNCTIONS"
+            }
+          },
+          {
+            "id": "1d056020c7265f2a",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/objects_class_drawing.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "objects_class_drawing.excalidraw"
+            }
+          },
+          {
+            "id": "2c21601a1c9961c3",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/objects_class_drawing.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "objects_class_drawing.excalidraw"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3eab60c1238c0476",
+    "type": "split",
+    "children": [
+      {
+        "id": "d53e46fe6b73018e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "db7f698c26a3d3a1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "c5bba9a16974aeea",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "3fb58a19decf4dfa",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 318.5
+  },
+  "right": {
+    "id": "c466dc9c659c6008",
+    "type": "split",
+    "children": [
+      {
+        "id": "daa13ce7b77db4a3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "255a8040ecbb1e4a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "index.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for index"
+            }
+          },
+          {
+            "id": "b84a38419b0f28fe",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "index.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from index"
+            }
+          },
+          {
+            "id": "5bae1d9f5e1dfc99",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "94f2f956c098ae92",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "a3456d72693c247c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "index.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of index"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-excalidraw-plugin:New drawing": false
+    }
+  },
+  "floating": {
+    "id": "9a5a47883164af64",
+    "type": "floating",
+    "children": [
+      {
+        "id": "8dc7737df8ca2eee",
+        "type": "window",
+        "children": [
+          {
+            "id": "1b45afd6c378da67",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "f0c66ae60f1ceb57",
+                "type": "leaf",
+                "state": {
+                  "type": "empty",
+                  "state": {},
+                  "icon": "lucide-file",
+                  "title": "New tab"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 0,
+        "y": 0,
+        "width": 1680,
+        "height": 1050,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "f0c66ae60f1ceb57",
+  "lastOpenFiles": [
+    "Excalidraw/objects_class_drawing.excalidraw.md",
+    "10. DOM Manipulation.md",
+    "9. JS FUNCTIONS.md",
+    "Drawing 2026-07-13 12.48.38.excalidraw.md",
+    "index.md",
+    "8. Array & Object , value , Reference vs Copy.md",
+    "5. Questions On Arrays.md",
+    "4. JS ARRAYS.md",
+    "Drawing 2026-07-13 12.39.38.excalidraw.md",
+    "Drawing 2026-07-13 12.39.36.excalidraw.md",
+    "1. JavaScript.md",
+    "3. JavaScript Datatypes.md",
+    "3.2 Number.md",
+    "6. JS Objects.md",
+    "7. Tasks on Objects.md",
+    "2. JavaScript Variables.md",
+    "3.1 String.md",
+    "Untitled.md",
+    "Pasted image 20260713090810.png",
+    "Pasted image 20260713090850.png",
+    "Pasted image 20260713090825.png",
+    "Excalidraw/Drawing 2026-07-13 11.17.20.excalidraw.md",
+    "Excalidraw/Drawing 2026-07-13 12.35.45.excalidraw.md",
+    "Excalidraw/Untitled.md",
+    "Excalidraw",
+    "Pasted image 20260713090903.png",
+    "Pasted image 20260713090838.png",
+    "Untitled",
+    "Pasted image 20260712120135.png",
+    "Pasted image 20260712120100.png",
+    "images/Pasted Image 20260711193928_279.png",
+    "images",
+    "Keyboard and Mouse Events.md",
+    "JavaScript Inro.excalidraw.md",
+    "[String.md",
+    "JAVASCRIPT/Intro.md",
+    "JAVASCRIPT/Drawing 2026-07-11 19.32.38.excalidraw.md",
+    "Pasted image 20260711203446.png",
+    "images/Pasted image 20260711203442.png",
+    "Untitled.canvas",
+    "JAVASCRIPT"
+  ]
+}

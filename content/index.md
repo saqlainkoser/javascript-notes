@@ -16,23 +16,16 @@ Welcome to my complete set of JavaScript notes, compiled while learning under **
 - [[3. JavaScript Datatypes]] 
 	- [[3.1 String]]
 	- [[3.2 Number]]
-	
-
-
 ### Arrays
 
 - [[4. JS ARRAYS]]
 - [[5. Questions On Arrays]]
-
 ### Objects
 
 - [[6. JS Objects]]
 - [[7. Tasks on Objects]]
 - [[8. Array & Object , value , Reference vs Copy]]
-
 ### Functions
-
-
 - [[9. JS FUNCTIONS]]
 -  [[Special functions]]
 - [[Arrow Functions]]
@@ -55,8 +48,15 @@ Welcome to my complete set of JavaScript notes, compiled while learning under **
 - [[11.3 Explained Code]]
 - [[11.4 ASYNC AWAIT]]
 - [[11.5 Event LOOP ⭐️]]
-- [[XML , Fetch , Axios]]
+- [[11.6 Fetch ]]
 - [[Weather Api Task]]
+
+### BACKEND
+
+- Node
+- [[12 First_BACKEND_server]]
+- [[13 . NODE modules]]
+- 
 
 ---
 
