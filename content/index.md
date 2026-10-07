@@ -68,4 +68,33 @@ Practical tasks are included after most concepts to reinforce learning through h
 
 ---
 
+<div class="nav-buttons">
+  <a href="13 . NODE modules.md">← Prev</a>
+  <a href="1. JavaScript.md">Next →</a>
+</div>
+
+<style>
+.nav-buttons {
+  display: flex;
+  justify-content: space-between; /* pushes one left, one right */
+  align-items: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.nav-buttons a {
+  padding: 8px 16px;
+  background: #f1f1f1;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-buttons a:hover {
+  background: #e0e0e0;
+}
+</style>
+
 _Notes compiled and maintained using Obsidian, published via Quartz._
