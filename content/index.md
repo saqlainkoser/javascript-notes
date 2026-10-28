@@ -56,7 +56,37 @@ Welcome to my complete set of JavaScript notes, compiled while learning under **
 - Node
 - [[12 First_BACKEND_server]]
 - [[13 . NODE modules]]
-- 
+- [[14. HTTP Module, Request-Response Lifecycle, Creating HTTP Server, Routing]]
+- [[15. NPM, package.json, Nodemon, Environment Variables]]
+- [[16. Introduction to Express.js, Express Server, Routing, Request & Response Objects]]
+- [[17. Middleware, Body Parsing, REST API Fundamentals, CRUD APIs]]
+- [[18. Validation, Error Handling Middleware, JWT Authentication, bcrypt, Protected Routes]]
+- [[19. Multer File Uploads, API Testing using Postman]]
+
+### DATABASE
+
+- [[20. MongoDB, MongoDB Atlas, CRUD Operations, Mongoose (Schemas, Models, Validation, Populate)]]
+
+### REACT
+
+- [[21. Introduction to React, Why React, Single Page Applications, Vite Setup, Project Structure, JSX Fundamentals]]
+- [[22. Components, Functional Components, Component Reusability, Component Organization]]
+- [[23. Props, Parent-to-Child Communication]]
+- [[24. State Management using useState(), Multiple State Variables]]
+- [[25. Event Handling in React, Forms, Controlled Components]]
+- [[26. Conditional Rendering, Lists and Keys]]
+- [[27. useEffect(), Side Effects, API Calls, Dependency Array]]
+- [[28. React Router, BrowserRouter, Routes, Navigation]]
+- [[29. Route Parameters, Nested Routes, Layout Components]]
+- [[30. Context API, useContext(), Global State Management]]
+- [[31. Axios, API Integration, Loading & Error States]]
+- [[32. Tailwind CSS Basics, Responsive Layouts]]
+- [[33. Authentication UI (Login, Registration, Validation)]]
+- [[34. React Project Development, Reusable Components, API Integration, Best Practices]]
+
+### MERN STACK
+
+- [[35. Connecting React with Express APIs, CORS, Authentication Flow, JWT Storage, Protected Routes, Final MERN Project Demonstration & Code Review]]
 
 ---
 
